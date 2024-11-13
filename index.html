@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tishan Rajapakshe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63e235b22e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineering Student</p>
+                <h1>Hi, I'm <span>Tishan Rajapakshe</span><br>from Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/person.jpg" alt="Person">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About<span style="color: #00e5eb;">Me</span> </h1>
+                    <p style="color: #00e5eb;">Hi, I’m Tishan Rajapakshe, a software engineering student at SLTC
+                        Research University in Sri Lanka and a passionate tech enthusiast. With a strong foundation in
+                        web and app development, I’m dedicated to creating efficient, user-focused solutions. I’m always
+                        excited to expand my skills and work on innovative projects that push boundaries and deliver
+                        real impact.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Python</span><br>Manipulate and Visualize data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2024 - Present</span><br>No-Experience</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2024 - Present</span><br>SLTC Research University</li>
+                            <li><span>2024</span><br>English Certificate Course - OUSL</li>
+                            <li><span>2023 - 2024</span><br>Diploma in ICT -SITC</li>
+                            <li><span>2022 - 2023</span><br>Web Development Certificate Course - SLLIT</li>
+                            <li><span>School</span><br>Wp/Ho/Siri Piyarathana Central College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------services------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting responsive, user-friendly websites for a seamless experience..</p>
+                    <a href="#">Learn more>></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen" style="color: #ffffff;"></i>
+                    <h2>Blog Writer</h2>
+                    <p>Creating engaging content that resonates with your audience.</p>
+                    <a href="#">Learn more>></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                    <h2>App Design</h2>
+                    <p>Designing intuitive and functional mobile apps for all devices.</p>
+                    <a href="#">Learn more>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Simple Student Registration system</h3>
+                        <p></p>
+                        <a href="https://github.com/Tishanssr/IT-WEB-23-62-0001-Tishan-Q2"><i class="fa-solid fa-link"
+                                style="color: #ffffff; font-size: 50px;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tourism Blog</h3>
+                        <p></p>
+                        <a href="https://github.com/Tishanssr/Jay-Travel-IT-WEB-23-62-0001"><i class="fa-solid fa-link"
+                                style="color: #ffffff; font-size: 50px;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-link" style="color: #ffffff; font-size: 50px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Tishanssr" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------------Contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>cit-24-01-0015@sltc.ac.lk</p>
+                    <p><i class="fa-solid fa-phone"></i>075-604-9342</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=100091856610956"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Tishanssr?t=ujQjGzkP7ljOUZYSqnzGHg&s=09"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tishan_rajapaksha/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tishan-rajapaksha-6860ba309"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Tishanssr"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="images/cv.pdf" download="cv" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024 &#169; Tishan. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        function opentab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-content");
+
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }        
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxmcOkdeQDpnXWVamQsN5So8TKBVXb_uKzhaEjwpYP5HTof_Bzls8-0akVe8dMnD_rD/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
